@@ -5,84 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfTreeViewControl"
         mc:Ignorable="d"
-        xmlns:model="clr-namespace:WpfTreeViewControl.Model" 
-        Title="MainWindow" Height="450" Width="800">
-    <Window.Resources>
-        <Style TargetType="{x:Type TreeViewItem}">
-            <Setter Property="Foreground" Value="Blue"/>
-            <Setter Property="FontSize" Value="12"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-        </Style>
-    </Window.Resources>
+        xmlns:controls="clr-namespace:WpfControlLibrary.Controls;assembly=WpfControlLibrary"
+        Title="MainWindow" Height="500" Width="800">
+
     <Grid>
         <StackPanel Orientation="Horizontal">
-            <StackPanel>
-                
-            </StackPanel>
-            <TreeView  x:Name="TreeViewControl" Margin="10,10,0,13" HorizontalAlignment="Left" VerticalAlignment="Top" Width="194" Height="200">
-                <TreeViewItem Header="Cold Drinks">
-                    <TreeViewItem Name="Child1">
-                        <TreeViewItem.Header>
-                            <CheckBox Name="CoffieCheckBox">
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Source="coffie.jpg" Height="30"></Image>
-                                    <TextBlock Text="Coffie"></TextBlock>
-                                </StackPanel>
-                            </CheckBox>
-                        </TreeViewItem.Header>
-                    </TreeViewItem>
-                    <TreeViewItem Name="Child2">
-                        <TreeViewItem.Header>
-                            <CheckBox Name="IcedTeaCheckBox">
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Source="IcedTea.jpg" Height="30"></Image>
-                                    <TextBlock Text="Iced Tea"></TextBlock>
-                                </StackPanel>
-                            </CheckBox>
-                        </TreeViewItem.Header>
-                    </TreeViewItem>
-                    <TreeViewItem Name="Child3">
-                        <TreeViewItem.Header>
-                            <CheckBox Name="MangoShakeCheckBox">
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Source="MangoShake.jpg" Height="30"></Image>
-                                    <TextBlock Text="Mango Shake"></TextBlock>
-                                </StackPanel>
-                            </CheckBox>
-                        </TreeViewItem.Header>
-                    </TreeViewItem>
-                    <TreeViewItem Name="Child4">
-                        <TreeViewItem.Header>
-                            <CheckBox Name="MilkCheckBox">
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Source="Milk.jpg" Height="30"></Image>
-                                    <TextBlock Text="Milk"></TextBlock>
-                                </StackPanel>
-                            </CheckBox>
-                        </TreeViewItem.Header>
-                    </TreeViewItem>
-                    <TreeViewItem Name="Child5">
-                        <TreeViewItem.Header>
-                            <CheckBox Name="TeaCheckBox">
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Source="Tea.jpg" Height="30"></Image>
-                                    <TextBlock Text="Tea"></TextBlock>
-                                </StackPanel>
-                            </CheckBox>
-                        </TreeViewItem.Header>
-                    </TreeViewItem>
-                    <TreeViewItem Name="Child6">
-                        <TreeViewItem.Header>
-                            <CheckBox Name="OrangeJuiceCheckBox">
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Source="OrangeJuice.jpg" Height="30"></Image>
-                                    <TextBlock Text="Orange Juice"></TextBlock>
-                                </StackPanel>
-                            </CheckBox>
-                        </TreeViewItem.Header>
-                    </TreeViewItem>
-                </TreeViewItem>
-            </TreeView>
+
+            <controls:XTreeView Width="400" Height="500"  ></controls:XTreeView>
+           
         </StackPanel>
     </Grid>
 </Window>
